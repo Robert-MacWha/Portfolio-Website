@@ -8,6 +8,8 @@ dark: true
 
 <div class="index">
 
+    <%- include('./_includes/components/filterTint') %>
+
     <!-- Parallax background -->
     <div class="bg-parallax dark">
         <div id="scene">
@@ -24,9 +26,9 @@ dark: true
     <div id="fullpage">
 
         <div class="section">
-            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+             <div class="absolute h-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
 
-                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+                <div class="absolute z-10 sm:h-auto sm:top-1/2 sm:bottom-auto bottom-28 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-1/4 transform sm:-translate-y-1/2 sm:translate-x-0 -translate-x-1/4">
 
                     <div delay="0" class="fade-left lg:mb-8 mb-4">
                         <%- include('./_includes/components/h1', {text: "Robert<br>MacWha"}) %>
@@ -39,17 +41,17 @@ dark: true
                     </div>
 
                 </div>
-                <div delay="3" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
-                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                <div delay="3" class="fade-pop shaded absolute sm:h-auto sm:top-40 top-16 sm:bottom-40 bottom-44 sm:left-1/4 left-10 sm:right-20 right-10">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/test.jpg'}) %>
                 </div>
 
             </div>
         </div>
         <div class="section">
             <!-- About -->
-            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+            <div class="absolute h-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
 
-                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+                <div class="absolute z-10 sm:h-auto sm:top-1/2 sm:bottom-auto bottom-28 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-1/4 transform sm:-translate-y-1/2 sm:translate-x-0 -translate-x-1/4">
 
                     <div delay="0" class="fade-left lg:mb-8 mb-4">
                         <%- include('./_includes/components/h1', {text: "About Me"}) %>
@@ -65,17 +67,17 @@ dark: true
                     </div>
 
                 </div>
-                <div delay="5" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
-                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                <div delay="5" class="fade-pop shaded absolute sm:h-auto sm:top-40 top-16 sm:bottom-40 bottom-44 sm:left-1/4 left-10 sm:right-20 right-10">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/About-Cover.jpg'}) %>
                 </div>
 
             </div>
         </div>
         <div class="section">
             <!-- Portfolio -->
-            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+             <div class="absolute h-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
 
-                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+                <div class="absolute z-10 sm:h-auto sm:top-1/2 sm:bottom-auto bottom-28 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-1/4 transform sm:-translate-y-1/2 sm:translate-x-0 -translate-x-1/4">
 
                     <div delay="0" class="fade-left lg:mb-8 mb-4">
                         <%- include('./_includes/components/h1', {text: "My Content"}) %>
@@ -90,17 +92,17 @@ dark: true
                         <%- include('./_includes/components/button', {text: 'Show me more'}) %>
                     </div>
                 </div>
-                <div delay="5" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
-                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                <div delay="5" class="fade-pop shaded absolute sm:h-auto sm:top-40 top-16 sm:bottom-40 bottom-44 sm:left-1/4 left-10 sm:right-20 right-10">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/Portfolio-Cover.jpg'}) %>
                 </div>
 
             </div>
         </div>
         <div class="section">
             <!-- Contact -->
-            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+             <div class="absolute h-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
 
-                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+                <div class="absolute z-10 sm:h-auto sm:top-1/2 sm:bottom-auto bottom-28 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-1/4 transform sm:-translate-y-1/2 sm:translate-x-0 -translate-x-1/4">
 
                     <div delay="0" class="fade-left lg:mb-8 mb-4">
                         <%- include('./_includes/components/h1', {text: "Get in Touch"}) %>
@@ -113,8 +115,8 @@ dark: true
                     </div>
 
                 </div>
-                <div delay="4" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
-                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                <div delay="4" class="fade-pop shaded absolute sm:h-auto sm:top-40 top-16 sm:bottom-40 bottom-44 sm:left-1/4 left-10 sm:right-20 right-10">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/test.jpg'}) %>
                 </div>
 
             </div>

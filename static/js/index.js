@@ -29,8 +29,8 @@ function update_parallax_pos()
     for (let e of elements) 
     {
         let speed = e.getAttribute('speed');
-        let offset = parallax_level * speed * 2;
-        let max_offset = speed * 2 * num_sections;
+        let offset = parallax_level * speed * 4;
+        let max_offset = speed * 4 * num_sections;
 
         e.style.marginTop = (max_offset - offset) + 'vh';
     }
