@@ -1,0 +1,23 @@
+{
+  "name": "eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postcss:process": "npx postcss static/scss/style.css --o static/css/style.css",
+    "serve": "npx eleventy --serve",
+    "start": "npm run postcss:process & npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^6.4.0",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {}
+}

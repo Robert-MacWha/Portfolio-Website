@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: Futura;
+      font-weight: 300;
+      src: url(/fonts/futura/300-futura.ttf) format("woff");
+    }
+    @font-face {
+        font-family: Futura;
+        font-weight: 400;
+        src: url(/fonts/futura/400-futura.ttf) format("woff");
+    }
+    @font-face {
+        font-family: Futura;
+        font-weight: 500;
+        src: url(/fonts/futura/500-futura.ttf) format("woff");
+    }
+    @font-face {
+        font-family: Futura;
+        font-weight: 700;
+        src: url(/fonts/futura/700-futura.ttf) format("woff");
+    }
+    @font-face {
+        font-family: Futura;
+        font-weight: 900;
+        src: url(/fonts/futura/900-futura.ttf) format("woff");
+    }
+}
+
+@responsive {
+    .text-shadow {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+  
+    .text-shadow-md {
+      text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.15);
+    }
+  
+    .text-shadow-lg {
+      text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.15);
+    }
+  
+    .text-shadow-none {
+      text-shadow: none;
+    }
+  }

@@ -1,0 +1,130 @@
+---
+title: Index
+layout: base.ejs
+permalink: /
+fullpage: true
+dark: true
+---
+
+<div class="index">
+
+    <!-- Parallax background -->
+    <div class="bg-parallax dark">
+        <div id="scene">
+            <div class="sky-bg bg-image absolute h-auto max-w-none"        data-depth="0.05" speed="1"></div>
+            <div class="mountian-1-bg bg-image absolute h-auto max-w-none" data-depth="0.1"  speed="1.5"></div>
+            <div class="mountian-2-bg bg-image absolute h-auto max-w-none" data-depth="0.15" speed="2"></div>
+            <div class="mountian-3-bg bg-image absolute h-auto max-w-none" data-depth="0.2"  speed="2.5"></div>
+            <div class="ground-1-bg bg-image absolute h-auto max-w-none"   data-depth="0.35" speed="3.5"></div>
+            <div class="ground-2-bg bg-image absolute h-auto max-w-none"   data-depth="0.4"  speed="4.5"></div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="fullpage">
+
+        <div class="section">
+            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+
+                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+
+                    <div delay="0" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/h1', {text: "Robert<br>MacWha"}) %>
+                    </div>
+                    <div delay="1" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/lineGlyph') %>
+                    </div>
+                    <div delay="2" class="fade-left h-3/4">
+                        <%- include('./_includes/components/h3', {text: "Data Scientist &<br>Blockchain Enthusiast"}) %>
+                    </div>
+
+                </div>
+                <div delay="3" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                </div>
+
+            </div>
+        </div>
+        <div class="section">
+            <!-- About -->
+            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+
+                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+
+                    <div delay="0" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/h1', {text: "About Me"}) %>
+                    </div>
+                    <div delay="1" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/lineGlyph') %>
+                    </div>
+                    <div delay="3" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/h3', {text: "I love AI, VR, and<br>Technology"}) %>
+                    </div>
+                    <div delay="4" class="fade-left">    
+                        <%- include('./_includes/components/button', {text: 'Show me more'}) %>
+                    </div>
+
+                </div>
+                <div delay="5" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                </div>
+
+            </div>
+        </div>
+        <div class="section">
+            <!-- Portfolio -->
+            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+
+                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+
+                    <div delay="0" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/h1', {text: "My Content"}) %>
+                    </div>
+                    <div delay="1" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/lineGlyph') %>
+                    </div>
+                    <div delay="3" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/h3', {text: "Check out what I've been<br>working on"}) %>
+                    </div>
+                    <div delay="4" class="fade-left">    
+                        <%- include('./_includes/components/button', {text: 'Show me more'}) %>
+                    </div>
+                </div>
+                <div delay="5" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                </div>
+
+            </div>
+        </div>
+        <div class="section">
+            <!-- Contact -->
+            <div class="absolute h-screen top-0 bottom-0 right-0 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-10 overflow-hidden">
+
+                <div class="absolute z-10 h-auto top-1/2 left-0 transform sm:-translate-y-1/2 translate-y-3/4">
+
+                    <div delay="0" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/h1', {text: "Get in Touch"}) %>
+                    </div>
+                    <div delay="1" class="fade-left lg:mb-8 mb-4">
+                        <%- include('./_includes/components/lineGlyph') %>
+                    </div>
+                    <div delay="2" class="fade-left">
+                        <%- include('./_includes/components/socials') %> 
+                    </div>
+
+                </div>
+                <div delay="4" class="fade-pop absolute top-0 bottom-10 left-0 right-0">
+                    <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/temp.jpeg'}) %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/vendors/jquery.min.js"></script>
+<script type="text/javascript" src="/vendors/fullpage.min.js"></script>
+<script type="text/javascript" src="/vendors/parallax.min.js"></script>
+<script type="text/javascript" src="/vendors/anime.min.js"></script>
+
+<script src="/js/index.js"></script>
