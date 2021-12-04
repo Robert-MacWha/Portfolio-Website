@@ -8,10 +8,11 @@ public_folder: '/images/uploads'
 
 # portfolio collection
 collections:
-  - label: "Portfolio"
-    name: "portfolio"
-    folder: "_posts/portfolio"
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "_src/posts/portfolio"
     create: true
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
     identifier_field: name
     fields:
       - {label: "Name", name: "name", widget: "string"}
