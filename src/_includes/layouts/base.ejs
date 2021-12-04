@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<% if (dark) { %>
-<html lang="eb" class="dark">
-<% } else { %>
 <html>
-<% } %>
 <head lang="eb">
 
     <meta charset="UTF-8">
@@ -24,7 +20,7 @@
     <% } %> 
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/<%= title.toLowerCase() %>.css">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

@@ -3,7 +3,6 @@ title: Index
 layout: base.ejs
 permalink: /
 fullpage: true
-dark: true
 ---
 
 <div class="index">
@@ -11,7 +10,7 @@ dark: true
     <%- include('./_includes/components/filterTint') %>
 
     <!-- Parallax background -->
-    <div class="bg-parallax dark">
+    <div class="bg-parallax dark z-0">
         <div id="scene">
             <div class="sky-bg bg-image absolute h-auto max-w-none"        data-depth="0.05" speed="1"></div>
             <div class="mountian-1-bg bg-image absolute h-auto max-w-none" data-depth="0.1"  speed="1.5"></div>
@@ -41,7 +40,7 @@ dark: true
                     </div>
 
                 </div>
-                <div delay="3" class="fade-pop shaded absolute sm:h-auto sm:top-40 top-16 sm:bottom-40 bottom-44 sm:left-1/4 left-10 sm:right-20 right-10">
+                <div delay="3" class="fade-pop shaded absolute sm:h-auto lg:top-40 sm:top-24 top-16 lg:bottom-40 sm:bottom-24 bottom-44 sm:left-1/4 left-10 sm:right-20 right-10">
                     <%- include('./_includes/components/indexPopImage', {imagePath: '/images/index/test.jpg'}) %>
                 </div>
 
@@ -63,7 +62,7 @@ dark: true
                         <%- include('./_includes/components/h3', {text: "I love AI, VR, and<br>Technology"}) %>
                     </div>
                     <div delay="4" class="fade-left">    
-                        <%- include('./_includes/components/button', {text: 'Show me more'}) %>
+                        <%- include('./_includes/components/button', {text: 'Show me more', href: 'about'}) %>
                     </div>
 
                 </div>
@@ -89,7 +88,7 @@ dark: true
                         <%- include('./_includes/components/h3', {text: "Check out what I've been<br>working on"}) %>
                     </div>
                     <div delay="4" class="fade-left">    
-                        <%- include('./_includes/components/button', {text: 'Show me more'}) %>
+                        <%- include('./_includes/components/button', {text: 'Show me more', href: 'portfolio'}) %>
                     </div>
                 </div>
                 <div delay="5" class="fade-pop shaded absolute sm:h-auto sm:top-40 top-16 sm:bottom-40 bottom-44 sm:left-1/4 left-10 sm:right-20 right-10">

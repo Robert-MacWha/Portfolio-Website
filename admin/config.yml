@@ -5,3 +5,18 @@ backend:
 # directory pointers
 media_folder: '_site/images/uploads'
 public_folder: '/images/uploads'
+
+# portfolio collection
+collections:
+  - label: "Portfolio"
+    name: "portfolio"
+    folder: "_posts/portfolio"
+    create: true
+    identifier_field: name
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Starred", name: "starred", widget: "boolean", default: false}
+      - {label: "Cover", name: "cover", widget: "image" }
+      - {label: "Content Type", name: "type", widget: "select", options: ["Article", "Video", "Project", "Newsletter", "One-pager", "Other"]}
+      - {label: "Standalone", name: "standalone", widget: "boolean", default: true}
+      - {label: "Content", name: "content", widget: "markdown", conditions: {fieldPath: "standalone", equal: false}, buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "quote", "bulleted-list", "numbered-list"]}
