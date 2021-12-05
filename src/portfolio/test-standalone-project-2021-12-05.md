@@ -1,5 +1,5 @@
 ---
-name: Test Standalone project
+name: Standalone project
 starred: false
 cover: /images/uploads/test-image-2.jpg
 type: Article
