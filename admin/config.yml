@@ -21,4 +21,4 @@ collections:
       - {label: "Content Type", name: "type", widget: "select", options: ["Article", "Video", "Project", "Newsletter", "One-pager", "Other"]}
       - {label: "Standalone", name: "standalone", widget: "boolean", default: true}
       - {label: "Link", name: "link", widget: "string", required: false, hint: "Required if standalone is set to false - link to the project"}
-      - {label: "Content", name: "content", widget: "markdown", required: false, hint: "Required if standalone is set to true - project page"}
+      - {label: "Content", name: "body", widget: "markdown", required: false, hint: "Required if standalone is set to true - project page"}
