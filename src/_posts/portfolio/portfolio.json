@@ -1,5 +1,5 @@
 {
-    "layout": "portfolio-iterm.ejs",
+    "layout": "portfolio-item.ejs",
     "name": "",
     "starred": false,
     "cover": "",
