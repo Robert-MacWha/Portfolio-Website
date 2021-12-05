@@ -21,3 +21,4 @@ collections:
       - {label: "Content Type", name: "type", widget: "select", options: ["Article", "Video", "Project", "Newsletter", "One-pager", "Other"]}
       - {label: "Standalone", name: "standalone", widget: "boolean", default: true}
       - {label: "Content", name: "content", widget: "markdown", conditions: [{fieldPath: "standalone", equal: false}]}
+      - {label: "Link", name: "link", widget: "string", conditions: [{fieldPath: "standalone", equal: 'true'}]}
