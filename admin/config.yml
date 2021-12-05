@@ -9,7 +9,7 @@ public_folder: '/images/uploads'
 # portfolio collection
 collections:
   - name: "portfolio"
-    label: "Portfolio"
+    label: "Portfolio project"
     folder: "_src/posts/portfolio"
     create: true
     slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
@@ -20,4 +20,4 @@ collections:
       - {label: "Cover", name: "cover", widget: "image" }
       - {label: "Content Type", name: "type", widget: "select", options: ["Article", "Video", "Project", "Newsletter", "One-pager", "Other"]}
       - {label: "Standalone", name: "standalone", widget: "boolean", default: true}
-      - {label: "Content", name: "content", widget: "markdown", conditions: {fieldPath: "standalone", equal: false}, buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "quote", "bulleted-list", "numbered-list"]}
+      - {label: "Content", name: "content", widget: "markdown", conditions: [{fieldPath: "standalone", equal: false}]}
