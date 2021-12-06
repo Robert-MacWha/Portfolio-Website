@@ -9,7 +9,7 @@ public_folder: '/images/uploads'
 # portfolio collection
 collections:
   - label: "Portfolio project"
-    name: "portfolio-project"
+    name: "portfolioItems"
     folder: "src/portfolio"
     create: true
     slug: "{{slug}}-{{year}}-{{month}}-{{day}}"

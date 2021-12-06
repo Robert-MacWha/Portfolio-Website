@@ -30,6 +30,7 @@
     }
 }
 
+/* Text shadows */
 @responsive {
     .text-shadow {
       text-shadow: 0 2px 4px rgba(0,0,0,0.15);
@@ -46,4 +47,29 @@
     .text-shadow-none {
       text-shadow: none;
     }
+}
+
+/* Masonry layout - https://stackoverflow.com/questions/66914169/can-i-create-a-masonry-layout-using-tailwind-css-utility-classes */
+@layer utilities {
+  @variants responsive {
+      .masonry-5-col {
+          column-count: 5;
+          column-gap: 1em;
+      }
+      .masonry-4-col {
+          column-count: 4;
+          column-gap: 1em;
+      }
+      .masonry-3-col {
+          column-count: 3;
+          column-gap: 1em;
+      }
+      .masonry-2-col {
+          column-count: 2;
+          column-gap: 1em;
+      }
+      .break-inside {
+          break-inside: avoid;
+      }
   }
+}

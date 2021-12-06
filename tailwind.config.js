@@ -16,7 +16,8 @@ module.exports = {
         red: {
           DEFAULT: '#ff4d5a',
           dark: '#C93C46'
-        }
+        },
+        gray: '#222'
       },
       fontFamily: {
         'futura': ['Futura', 'Helvetica', 'Arial', 'sans-serif']
@@ -24,7 +25,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      filter: ['hover']
+    },
   },
   plugins: [],
 }

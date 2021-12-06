@@ -1,5 +1,6 @@
 {
     "layout": "portfolio-item.ejs",
+    "tags": "portfolioItems",
     "name": "",
     "starred": false,
     "cover": "",
