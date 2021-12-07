@@ -3,3 +3,27 @@ title: About
 layout: base.ejs
 fullpage: false
 ---
+
+<!-- Header -->
+<%- include('./_includes/components/filterTint'); %>
+<header class="relative top-0 left-0 right-0" style="height: 66vh;">
+
+    <div class="shaded absolute top-0 bottom-0 left-0 right-0 bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url(/images/index/About-Cover.jpg);"></div>
+    <div class="absolute z-10 sm:h-auto sm:top-1/2 sm:bottom-auto bottom-28 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-1/4 transform sm:-translate-y-1/2 sm:translate-x-0 -translate-x-1/4">
+
+        <div class="lg:mb-8 mb-4">
+            <%- include('./_includes/components/h1', {text: "About me"}) %>
+        </div>
+        <div class="fade-left lg:mb-8 mb-4">
+            <%- include('./_includes/components/lineGlyph') %>
+        </div>
+        <div class="lg:mb-8 mb-4">
+            <%- include('./_includes/components/h3', {text: "I love AI, VR, and Technology"}) %>
+        </div>
+        <div>    
+            <%- include('./_includes/components/socials') %> 
+        </div>
+
+    </div>
+
+</header>

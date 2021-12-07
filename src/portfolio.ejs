@@ -3,87 +3,74 @@ title: Portfolio
 layout: base.ejs
 fullpage: false
 ---
-    
+
 <!-- Header -->
 <%- include('./_includes/components/filterTint'); %>
 <header class="relative top-0 left-0 right-0" style="height: 66vh;">
 
-    <div class="shaded absolute top-0 bottom-0 left-0 right-0 bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url('/images/index/Portfolio-Cover.jpg');"></div>
+    <div class="shaded absolute top-0 bottom-0 left-0 right-0 bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url(/images/index/Portfolio-Cover.jpg);"></div>
     <div class="absolute z-10 sm:h-auto sm:top-1/2 sm:bottom-auto bottom-28 xl:left-56 lg:left-40 md:left-30 sm:left-24 left-1/4 transform sm:-translate-y-1/2 sm:translate-x-0 -translate-x-1/4">
 
-        <div delay="0" class="fade-left lg:mb-8 mb-4">
-            <%- include('./_includes/components/h1', {text: "My Portfolio"}) %>
+        <div class="lg:mb-8 mb-4">
+            <%- include('./_includes/components/h1', {text: 'My Portfolio'}) %>
         </div>
-        <div delay="1" class="fade-left lg:mb-8 mb-4">
+        <div class="fade-left lg:mb-8 mb-4">
             <%- include('./_includes/components/lineGlyph') %>
         </div>
-        <div delay="3" class="fade-left lg:mb-8 mb-4">
-            <%- include('./_includes/components/h3', {text: "A collection of all that I've built"}) %>
+        <div class="lg:mb-8 mb-4">
+            <%- include('./_includes/components/h3', {text: "A collection of all that I've made"}) %>
         </div>
-        <div delay="4" class="fade-left">    
-            <%- include('./_includes/components/button', {text: 'View my Github', href: 'about'}) %>
+        <div>    
+            <%- include('./_includes/components/button', {text: 'See my Github', href: 'https://github.com'}) %>
         </div>
 
     </div>
 
 </header>
-<div class="bg-gray">
-    <div class="container mx-auto px-8 py-16">
-        <div class="xl:masonry-4-col lg:masonry-3-col sm:masonry-2-col masonry-1-col">
-    
-            <% for (let item of collections.portfolioItems) { %>
-    
-                <div class="break-inside mb-4">
-                    <%- include('./_includes/components/portfolioItemMason', {item: item}); %>
-                </div>
-            
-            <% } %>
-    
-            <style>
-                .portfolio-item:hover img
-                {
-                    transform: scale(1.25);
-                }
-            
-                .portfolio-item .img-overlay
-                {
-                    background-color: #C93C4600;
-                    border-radius: 50%;
-                }
 
-                .portfolio-item .img-overlay:hover
-                {
-                    background-color: #c93c457e;
-                    border-radius: 0.1%;
-                }
-            
-                .portfolio-item .img-overlay::before
-                {  
-                    content: "";
-                    width: 40%;
-                    height: 45%;
-                    position: absolute;
-                    top: 18px;
-                    left: 18px;
-            
-                    border-top: 2px solid white;
-                    border-left: 2px solid white;
-                }
-            
-                .portfolio-item .img-overlay::after
-                {
-                    content: "";
-                    width: 40%;
-                    height: 45%;
-                    position: absolute;
-                    bottom: 18px;
-                    right: 18px;
-            
-                    border-bottom: 2px solid white;
-                    border-right: 2px solid white;
-                }
-            </style>
-    
-        </div>
+<div class="" style="background-color: #f5f5f5;">
+    <div class="container mx-auto px-8 py-16">
+
+        <% let starredItems = collections.portfolioItems.filter((item) => {return item.data.starred}); %>
+        <% if (starredItems.length != 0) { %>
+            <%- include('./_includes/components/portfolioSection', {items: starredItems, title: "Starred"}); %>
+        <% } %>
+        
+        <% let projects = collections.portfolioItems.filter((item) => {return item.data.type == "Project"}); %>
+        <% if (projects.length != 0) { %>
+            <div class="mt-16"></div>
+            <%- include('./_includes/components/portfolioSection', {items: projects, title: "Projects"}); %>
+        <% } %>
+
+        <% let articles = collections.portfolioItems.filter((item) => {return item.data.type == "Article"}); %>
+        <% if (articles.length != 0) { %>
+            <div class="mt-16"></div>
+            <%- include('./_includes/components/portfolioSection', {items: articles, title: "Articles"}); %>
+        <% } %>
+
+        <% let newsletters = collections.portfolioItems.filter((item) => {return item.data.type == "Newsletter"}); %>
+        <% if (newsletters.length != 0) { %>
+            <div class="mt-16"></div>
+            <%- include('./_includes/components/portfolioSection', {items: newsletters, title: "Newsletters"}); %>
+        <% } %>
+
+        <% let videos = collections.portfolioItems.filter((item) => {return item.data.type == "Video"}); %>
+        <% if (videos.length != 0) { %>
+            <div class="mt-16"></div>
+            <%- include('./_includes/components/portfolioSection', {items: videos, title: "Videos"}); %>
+        <% } %>
+
+        <% let onePagers = collections.portfolioItems.filter((item) => {return item.data.type == "One-pager"}); %>
+        <% if (onePagers.length != 0) { %>
+            <div class="mt-16"></div>
+            <%- include('./_includes/components/portfolioSection', {items: onePagers, title: "One-Pagers"}); %>
+        <% } %>
+
+        <% let others = collections.portfolioItems.filter((item) => {return item.data.type == "Other"}); %>
+        <% if (others.length != 0) { %>
+            <div class="mt-16"></div>
+            <%- include('./_includes/components/portfolioSection', {items: others, title: "Uncategorized"}); %>
+        <% } %>
+
     </div>
 </div>

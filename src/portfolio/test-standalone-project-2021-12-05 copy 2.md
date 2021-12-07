@@ -1,8 +1,8 @@
 ---
-name: Standalone project
+name: Standalone video
 starred: false
 cover: /images/uploads/test-image-2.jpg
-type: Article
+type: Video
 standalone: true
 content: |-
   This is the content of the article

@@ -1,8 +1,9 @@
 ---
-name: Standalone project
-starred: false
+name: Standalone project 3
+starred: true
 cover: /images/index/test.jpg
 type: Article
+summary: This item should be a starred article
 standalone: true
 content: |-
   This is the content of the article
