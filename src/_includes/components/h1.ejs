@@ -1,2 +1,10 @@
-<h1 class="text-white font-futura font-medium uppercase xl:text-8xl md:text-7xl sm:text-6xl text-4xl text-shadow-lg"><%- text %></h1>
+<% if (typeof color == 'undefined') {
+    color = 'white'; // default value for color
+} %>
+
+<% if (typeof shadow == 'undefined') {
+    shadow = 'text-shadow-lg'; // default value for shadow
+} %>
+
+<h1 class="text-<%= color %> font-futura font-medium uppercase xl:text-8xl md:text-7xl sm:text-6xl text-4xl <%= shadow %>"><%- text %></h1>
                     
