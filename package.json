@@ -6,7 +6,8 @@
   "scripts": {
     "postcss:process": "npx postcss static/scss/style.css --o static/css/style.css",
     "serve": "npx eleventy --serve",
-    "start": "npm run postcss:process & npm run serve"
+    "start": "npm run postcss:process & npm run serve",
+    "prod": "NODE_ENV=production npm run postcss:process && npx eleventy"
   },
   "keywords": [],
   "author": "",
