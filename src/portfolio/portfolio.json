@@ -1,11 +1,10 @@
 {
-    "layout": "portfolio-item.ejs",
+    "layout": "",
     "tags": "portfolioItems",
     "name": "",
     "starred": false,
     "cover": "",
     "type": "",
     "summary": "",
-    "standalone": true,
     "link": ""
 }

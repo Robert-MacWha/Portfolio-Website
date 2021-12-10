@@ -11,11 +11,15 @@
         </div>
         <div class="flip-card-back bg-white">
             <div class="relative md:p-8 p-4 md:pt-12 pt-6 h-full">
-                <h1 class="font-bold md:text-2xl text-xl mb-2"><%= item.data.name %></h1>
+                <h1 class="font-bold md:text-2xl text-xl mb-2 whitespace-nowrap overflow-hidden overflow-ellipsis"><%= item.data.name %></h1>
                 <div class="bg-red w-24 h-0.5 rounded mb-3"></div>
                 <h3 class="text-xl mb-4 text-gray overflow-hidden overflow-ellipsis" style="display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;"><%= item.data.summary %></h3>
 
-                <a href="#" class="absolute md:bottom-8 bottom-4 left-1/2 transform -translate-x-1/2 group"><i class="fa fa-link fa-2x text-white bg-red p-2 rounded transition duration-700 group-hover:bg-red-dark"></i></a>
+                <%  if (item.data.standalone) { %>
+                    <a href="<%= item.data.link %>" class="absolute md:bottom-8 bottom-4 left-1/2 transform -translate-x-1/2 group"><i class="fa fa-link fa-2x text-white bg-red p-2 rounded transition duration-700 group-hover:bg-red-dark"></i></a>
+                <% } else { %>
+                    <a href="<%= item.url %>" class="absolute md:bottom-8 bottom-4 left-1/2 transform -translate-x-1/2 group"><i class="fa fa-link fa-2x text-white bg-red p-2 rounded transition duration-700 group-hover:bg-red-dark"></i></a>
+                <% } %>
             </div>
         </div>
 
