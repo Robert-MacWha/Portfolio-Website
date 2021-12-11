@@ -31,45 +31,47 @@ fullpage: false
 <div class="" style="background-color: #f5f5f5;">
     <div class="container mx-auto px-8 py-32">
 
-        <% let starredItems = collections.portfolioItems.filter((item) => {return item.data.starred}); %>
-        <% if (starredItems.length != 0) { %>
-            <%- include('./_includes/components/portfolioSection', {items: starredItems, title: "Starred"}); %>
-        <% } %>
-        
-        <% let projects = collections.portfolioItems.filter((item) => {return item.data.type == "Project"}); %>
-        <% if (projects.length != 0) { %>
-            <div class="mt-16"></div>
-            <%- include('./_includes/components/portfolioSection', {items: projects, title: "Projects"}); %>
-        <% } %>
+        <% if (collections.portfolioItems) { %>
+            <% let starredItems = collections.portfolioItems.filter((item) => {return item.data.starred}); %>
+            <% if (starredItems.length != 0) { %>
+                <%- include('./_includes/components/portfolioSection', {items: starredItems, title: "Starred"}); %>
+            <% } %>
+            
+            <% let projects = collections.portfolioItems.filter((item) => {return item.data.type == "Project"}); %>
+            <% if (projects.length != 0) { %>
+                <div class="mt-16"></div>
+                <%- include('./_includes/components/portfolioSection', {items: projects, title: "Projects"}); %>
+            <% } %>
 
-        <% let articles = collections.portfolioItems.filter((item) => {return item.data.type == "Article"}); %>
-        <% if (articles.length != 0) { %>
-            <div class="mt-16"></div>
-            <%- include('./_includes/components/portfolioSection', {items: articles, title: "Articles"}); %>
-        <% } %>
+            <% let articles = collections.portfolioItems.filter((item) => {return item.data.type == "Article"}); %>
+            <% if (articles.length != 0) { %>
+                <div class="mt-16"></div>
+                <%- include('./_includes/components/portfolioSection', {items: articles, title: "Articles"}); %>
+            <% } %>
 
-        <% let newsletters = collections.portfolioItems.filter((item) => {return item.data.type == "Newsletter"}); %>
-        <% if (newsletters.length != 0) { %>
-            <div class="mt-16"></div>
-            <%- include('./_includes/components/portfolioSection', {items: newsletters, title: "Newsletters"}); %>
-        <% } %>
+            <% let newsletters = collections.portfolioItems.filter((item) => {return item.data.type == "Newsletter"}); %>
+            <% if (newsletters.length != 0) { %>
+                <div class="mt-16"></div>
+                <%- include('./_includes/components/portfolioSection', {items: newsletters, title: "Newsletters"}); %>
+            <% } %>
 
-        <% let videos = collections.portfolioItems.filter((item) => {return item.data.type == "Video"}); %>
-        <% if (videos.length != 0) { %>
-            <div class="mt-16"></div>
-            <%- include('./_includes/components/portfolioSection', {items: videos, title: "Videos"}); %>
-        <% } %>
+            <% let videos = collections.portfolioItems.filter((item) => {return item.data.type == "Video"}); %>
+            <% if (videos.length != 0) { %>
+                <div class="mt-16"></div>
+                <%- include('./_includes/components/portfolioSection', {items: videos, title: "Videos"}); %>
+            <% } %>
 
-        <% let onePagers = collections.portfolioItems.filter((item) => {return item.data.type == "One-pager"}); %>
-        <% if (onePagers.length != 0) { %>
-            <div class="mt-16"></div>
-            <%- include('./_includes/components/portfolioSection', {items: onePagers, title: "One-Pagers"}); %>
-        <% } %>
+            <% let onePagers = collections.portfolioItems.filter((item) => {return item.data.type == "One-pager"}); %>
+            <% if (onePagers.length != 0) { %>
+                <div class="mt-16"></div>
+                <%- include('./_includes/components/portfolioSection', {items: onePagers, title: "One-Pagers"}); %>
+            <% } %>
 
-        <% let others = collections.portfolioItems.filter((item) => {return item.data.type == "Other"}); %>
-        <% if (others.length != 0) { %>
-            <div class="mt-16"></div>
-            <%- include('./_includes/components/portfolioSection', {items: others, title: "Uncategorized"}); %>
+            <% let others = collections.portfolioItems.filter((item) => {return item.data.type == "Other"}); %>
+            <% if (others.length != 0) { %>
+                <div class="mt-16"></div>
+                <%- include('./_includes/components/portfolioSection', {items: others, title: "Uncategorized"}); %>
+            <% } %>
         <% } %>
 
     </div>
