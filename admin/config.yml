@@ -15,7 +15,7 @@ collections:
     slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
     identifier_field: name
     fields:
-      - {label: "Name", name: "name", widget: "string", pattern: ['.{15}', "Must have fewer than 15 characters"]}
+      - {label: "Name", name: "name", widget: "string", pattern: ['.{20}', "Must have fewer than 20 characters"]}
       - {label: "Starred", name: "starred", widget: "boolean", default: false}
       - {label: "Cover", name: "cover", widget: "image" }
       - {label: "Content Type", name: "type", widget: "select", options: ["Article", "Video", "Project", "Newsletter", "One-pager", "Other"]}
