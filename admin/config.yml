@@ -20,4 +20,4 @@ collections:
       - {label: "Cover", name: "cover", widget: "image" }
       - {label: "Content Type", name: "type", widget: "select", options: ["Article", "Video", "Project", "Newsletter", "One-pager", "Other"]}
       - {label: "Summary", name: "summary", widget: "string"}
-      - {label: "Link", name: "link", widget: "string", required: false, hint: "Required if standalone is set to true - link to the project"}
+      - {label: "Link", name: "link", widget: "string"}
