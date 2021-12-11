@@ -1,5 +1,5 @@
 ---
-name: Project Coeys
+name: Project Coeus
 starred: false
 cover: /images/uploads/coeus-cover.jpg
 type: Video
