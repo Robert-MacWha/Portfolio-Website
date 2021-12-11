@@ -1,5 +1,5 @@
 ---
-name: Ray Marching Implementation
+name: Ray Marching Renderer
 starred: false
 cover: /images/uploads/ray-marching-cover.png
 type: Project
