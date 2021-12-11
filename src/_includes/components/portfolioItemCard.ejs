@@ -11,9 +11,8 @@
         </div>
         <div class="flip-card-back bg-white">
             <div class="relative md:p-8 p-4 h-full overflow-hidden overflow-ellipsis">
-                <a href="<%= item.data.link %>" target=”_blank” class="inline-block font-bold text-xl mb-4 whitespace-nowrap underline" style="text-decoration-color: #ff4d5a;"><%= item.data.name %></a>
-                <div class="bg-red w-24 h-0.5 rounded mb-3"></div>
-                <h3 class="text-lg mb-4 text-gray overflow-hidden overflow-ellipsis" style="display: -webkit-box; -webkit-line-clamp: 6; line-clamp: 6; -webkit-box-orient: vertical;"><%= item.data.summary %></h3>
+                <h3 class="text-md mb-4 text-gray overflow-hidden overflow-ellipsis" style="display: -webkit-box; -webkit-line-clamp: 5; line-clamp: 5; -webkit-box-orient: vertical;"><%= item.data.summary %></h3>
+                <a href="<%= item.data.link %>" class="absolute md:bottom-8 bottom-4 left-1/2 transform -translate-x-1/2 group"><i class="fa fa-link fa-2x text-white bg-red p-2 rounded transition duration-700 group-hover:bg-red-dark"></i></a>
             </div>
         </div>
 
