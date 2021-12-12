@@ -1,4 +1,2 @@
-Website insperation: https://kuon.space/#top
-TODO:
- - minify all CSS and JS
- - Purge unrequired images, fonts, and packages 
+Add full pages to all projects
+Add a 'contributions' section to each project so I can show what I worked on
