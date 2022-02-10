@@ -8,7 +8,11 @@
     
     <!-- SEO Things -->
     <meta name="description" content="Site Description">
+    <% if (title == "index") { %>
+    <title> Robert MacWha </title>
+    <% } else { %>
     <title> <%= title %> </title>
+    <% } %>
     <!-- <link rel="icon" href="/images/favicon.png"> -->
 
     <!-- CSS -->
