@@ -1,6 +1,6 @@
 ---
 name: Acadium Presentation
-starred: true
+starred: false
 cover: /images/uploads/acadium-cover.jpg
 type: Project
 summary: A presentation given to Acadium on how to 10x their customer base
